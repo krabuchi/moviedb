@@ -45,10 +45,11 @@ const useDataApi = (initialUrl, initialData) => {
   return [state, setUrl];
 };
 
-function MovieDetails({}) {
+function MovieDetails() {
   let { id } = useParams();
   const url = `https://moviedb-backend.herokuapp.com/api/movies/${id}`;
   const [{ data, isLoading, isError }, doFetch] = useDataApi(url, {});
+  console.log(data);
   return (
     <>
       {isError && <div>Something went wrong!!</div>}
@@ -77,6 +78,7 @@ function MovieDetails({}) {
               <a
                 href={`https://www.imdb.com/title/${data.imdb_id}`}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img src={imdb} alt="imdb-link" height="60" />
               </a>
