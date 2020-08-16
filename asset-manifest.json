@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/moviedb/static/css/main.287fe228.chunk.css",
+    "main.js": "/moviedb/static/js/main.50154b70.chunk.js",
+    "main.js.map": "/moviedb/static/js/main.50154b70.chunk.js.map",
+    "runtime-main.js": "/moviedb/static/js/runtime-main.e1bfa99b.js",
+    "runtime-main.js.map": "/moviedb/static/js/runtime-main.e1bfa99b.js.map",
+    "static/js/2.01dc4290.chunk.js": "/moviedb/static/js/2.01dc4290.chunk.js",
+    "static/js/2.01dc4290.chunk.js.map": "/moviedb/static/js/2.01dc4290.chunk.js.map",
+    "index.html": "/moviedb/index.html",
+    "precache-manifest.aac01db8eb220c417a58acaf486100b4.js": "/moviedb/precache-manifest.aac01db8eb220c417a58acaf486100b4.js",
+    "service-worker.js": "/moviedb/service-worker.js",
+    "static/css/main.287fe228.chunk.css.map": "/moviedb/static/css/main.287fe228.chunk.css.map",
+    "static/js/2.01dc4290.chunk.js.LICENSE.txt": "/moviedb/static/js/2.01dc4290.chunk.js.LICENSE.txt",
+    "static/media/imdb.png": "/moviedb/static/media/imdb.09df7b22.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e1bfa99b.js",
+    "static/js/2.01dc4290.chunk.js",
+    "static/css/main.287fe228.chunk.css",
+    "static/js/main.50154b70.chunk.js"
+  ]
+}
