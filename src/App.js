@@ -26,8 +26,12 @@ const App = () => {
         <div>Loading....</div>
       ) : (
         <Switch>
-          <Route exact path="/" render={() => <MovieList data={data} />} />
-          <Route exact path="/movie/:id" component={MovieDetails} />
+          <Route
+            exact
+            path="/moviedb"
+            render={() => <MovieList data={data} />}
+          />
+          <Route exact path="/moviedb/movie/:id" component={MovieDetails} />
         </Switch>
       )}
     </Router>
