@@ -1,0 +1,17 @@
+.searchForm {
+    height: 100px;
+    width: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+.searchForm input {
+    padding: 0 10px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+}

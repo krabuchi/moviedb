@@ -1,0 +1,16 @@
+.ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 1200px;
+    margin:  10px auto;
+}
+
+.li img {
+    width: 100%;
+    max-height: 350px;
+}
+
+.title {
+    overflow-wrap: break-word;
+}
