@@ -13,7 +13,7 @@ const App = () => {
   const [query, setQuery] = useState("");
 
   const [{ data, isLoading, isError }, doFetch] = useDataApi(
-    `http://localhost:5000/api/movies`,
+    `https://moviedb-backend.herokuapp.com/api/movies`,
     []
   );
   return (

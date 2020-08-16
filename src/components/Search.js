@@ -7,7 +7,9 @@ export const Search = ({ query, setQuery, doFetch }) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (query === "") return;
-    doFetch(`http://localhost:5000/api/movies/search?q=${query}`);
+    doFetch(
+      `https://moviedb-backend.herokuapp.com/api/movies/search?q=${query}`
+    );
     history.push("/");
   };
 
