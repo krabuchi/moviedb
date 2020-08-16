@@ -48,7 +48,7 @@ const useDataApi = (initialUrl, initialData) => {
 function MovieDetails() {
   let { id } = useParams();
   const url = `https://moviedb-backend.herokuapp.com/api/movies/${id}`;
-  const [{ data, isLoading, isError }, doFetch] = useDataApi(url, {});
+  const [{ data, isLoading, isError }] = useDataApi(url, {});
   console.log(data);
   return (
     <>
