@@ -2,12 +2,13 @@ import React, { useState } from "react";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import "./App.module.css";
-
-import { Search } from "./components/Search";
-import MovieList from "./components/MovieList";
-import MovieDetails from "./components/MovieDetails";
+import { Search } from "./components/search/Search";
+import MovieList from "./components/movieList/MovieList";
+import MovieDetails from "./components/movieDetails/movieDetails";
 import useDataApi from "./components/useDataApi";
+import Footer from "./components/footer/footer";
+import Loading from "./components/loading-and-error/loading";
+import Error from "./components/loading-and-error/error";
 
 const App = () => {
   const [query, setQuery] = useState("");
@@ -20,16 +21,17 @@ const App = () => {
     <Router>
       <Search doFetch={doFetch} query={query} setQuery={setQuery} />
 
-      {isError && <div>Something went wrong!!</div>}
+      {isError && <Error>Oops</Error>}
 
       {isLoading ? (
-        <div>Loading....</div>
+        <Loading>Almost up...</Loading>
       ) : (
         <Switch>
           <Route exact path="/" render={() => <MovieList data={data} />} />
           <Route exact path="/movie/:id" component={MovieDetails} />
         </Switch>
       )}
+      <Footer />
     </Router>
   );
 };

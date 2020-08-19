@@ -1,0 +1,13 @@
+.errorScreen,
+.loadingScreen {
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 7.9rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorScreen,
+.loadingScreen img {
+  max-width: 200px;
+}
